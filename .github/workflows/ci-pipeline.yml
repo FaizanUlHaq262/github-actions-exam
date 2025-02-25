@@ -1,13 +1,13 @@
-name: Testing CI pipeline
-on: [push,pull_request]
+name: "My ci pipeline"
+on: [push, pull_request]
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repository
+      - name: checkout repo
         uses: actions/checkout@v3
 
-      - name: Print Hello
-        run: echo "Hellow World from faizan hahahahaha...." 
+      - name: create a file
+        run: touch newFile.txt
