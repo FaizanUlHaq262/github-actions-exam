@@ -7,7 +7,7 @@ jobs:
 
     steps:
       - name: Checkout Repository
-      - uses: actions/checkout@v3
+        uses: actions/checkout@v3
 
       - name: Print Hello
-      - run: echo "Hellow World from faizan hahahahaha...." 
+        run: echo "Hellow World from faizan hahahahaha...." 
